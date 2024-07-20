@@ -99,3 +99,20 @@ Hospitality Haven, a prominent hotel chain, grapples with efficiently managing t
    - Leveraged Power BI to create interactive dashboards.
    - Monitored occupancy rates, pricing, and guest behavior.
 
+## Data Description
+
+The data resides within a Microsoft Excel workbook. To import it into Power BI, follow these steps:
+
+1. **Launch Power BI:**
+   - Open Power BI Desktop.
+
+2. **Get Data:**
+   - Click on "Get Data" from the home tab.
+
+3. **Select Excel Workbook:**
+   - Choose the Excel workbook containing your data.
+
+4. **Confirm Structure:**
+   - Use Power Query to verify and shape the data structure.
+
+## Data Model
