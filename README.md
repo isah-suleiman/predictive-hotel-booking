@@ -32,10 +32,7 @@ Hospitality Haven, a prominent hotel chain, grapples with efficiently managing t
    - Staying competitive demands real-time awareness of market dynamics.
    - Insights into competitor pricing strategies and booking trends are essential.
 
-Hospitality Haven's success lies in overcoming these challenges through data-driven strategies and adaptive decision-making.
-
-Certainly! Let's simplify the rationale for the project, making it recruiter-friendly:
-
+#### Hospitality Haven's success lies in overcoming these challenges through data-driven strategies and adaptive decision-making.
 ---
 
 ## Rationale for the Project: Optimizing Hotel Operations
@@ -59,3 +56,27 @@ Certainly! Let's simplify the rationale for the project, making it recruiter-fri
 5. **Data-Driven Decisions:**
    - Gut feelings are replaced by data-backed choices.
    - Elevates hotel management effectiveness.
+
+## Project Goals:
+
+1. **Comprehensive Data Insights:**
+   - Dive deep into historical booking data.
+   - Uncover hidden patterns and trends.
+   - Understand guest behavior and preferences.
+
+2. **Customer Behavior Analysis:**
+   - Explore booking lead times.
+   - Identify preferred booking channels.
+   - Evaluate the impact of promotions and discounts.
+
+3. **Booking Pattern Identification:**
+   - Visualize seasonal trends.
+   - Proactively allocate resources based on booking patterns.
+
+4. **Pricing Strategy Assessment:**
+   - Analyze historical pricing data.
+   - Optimize room rates for revenue and competitiveness.
+
+5. **Competitor Benchmarking:**
+   - Compare competitor pricing strategies.
+   - Stay ahead in the dynamic hospitality industry.
