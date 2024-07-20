@@ -80,3 +80,22 @@ Hospitality Haven, a prominent hotel chain, grapples with efficiently managing t
 5. **Competitor Benchmarking:**
    - Compare competitor pricing strategies.
    - Stay ahead in the dynamic hospitality industry.
+
+## Project Scope: A Step-by-Step Journey
+
+1. **Data Collection and Integration:**
+   - Gathered historical data on bookings, customer profiles, and competitor pricing.
+   - Cleaned and transformed the data into a unified dataset.
+
+2. **Exploratory Data Analysis (EDA):**
+   - Uncovered insights through data visualization.
+   - Explored distributions, correlations, and trends.
+
+3. **Competitor Analysis:**
+   - Analyzed competitors' pricing strategies and booking trends.
+   - Positioned Hospitality Haven strategically.
+
+4. **Power BI Dashboards: Real-Time Insights:**
+   - Leveraged Power BI to create interactive dashboards.
+   - Monitored occupancy rates, pricing, and guest behavior.
+
