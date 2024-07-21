@@ -212,4 +212,64 @@ The data resides within a Microsoft Excel workbook. To import it into Power BI, 
         BookingTable[Cancellation] = "No"
     )
     ```
-    This measure calculates the total revenue by summing the competitor room rate multiplied by the duration of stay for each booking that was not cancelled.
+    This measure calculates the total revenue by summing the competitor's room rate multiplied by the duration of stay for each booking that was not canceled.
+
+## Visualization
+The report contains 3 pages
+1. Overview
+2. Customer Analysis
+3. Competitor Analysis
+
+![Alt text](assets/images/Hotelo.jpg)
+
+The "Hotel Overview" dashboard provides a comprehensive analysis of the hotel's key performance indicators, showcasing crucial insights into booking trends, revenue distribution, and guest demographics. 
+
+Notably, the hotel generated significant revenue, with a total of GHC24 million, driven predominantly by male guests (78.07% of the revenue). 
+
+Nigeria emerged as the top country by revenue, highlighting the importance of this market. 
+
+The average daily rate stands at GHC1,210, contributing to a total profit of GHC10 million. Preferred room types are evenly distributed, with suites and single rooms being the most popular. 
+
+Monthly revenue trends reveal peaks in March and a consistent performance throughout the year. Additionally, the analysis by booking channels underscores the importance of a diverse booking strategy, with direct, event, and online channels each contributing GHC1.3 million. 
+
+These insights enable hotel management to optimize operations, target key markets, and enhance profitability.
+
+---
+![Alt text](assets/images/Hotelc.jpg)
+
+The "Customer Analysis" dashboard provides a detailed examination of customer behavior and demographics, offering valuable insights for hotel management. 
+
+It reveals that the average age of customers is 44, with a total cancellation rate of 19%. 
+
+Room type preferences show a balanced distribution, with double rooms slightly leading at 508 bookings. 
+
+Most stays range between 4-7 days (765 bookings) and 1-3 days (753 bookings). 
+
+Age-wise, customers aged 46-55 make up the largest segment (404 bookings). 
+
+Monthly booking trends highlight peaks in March and May, followed by a decline during the summer months. 
+
+When analyzed by travel purpose and loyalty status, business and leisure trips are equally popular, with loyalty members constituting a significant portion of the bookings. 
+
+Nigeria stands out as the top country by bookings (435), followed by Egypt and Ghana. 
+
+These insights help the hotel tailor its services, marketing strategies, and loyalty programs to better meet customer needs and preferences.
+
+---
+![Alt text](assets/images/Hotelco.jpg)
+
+The "Competitor Analysis" dashboard offers a comprehensive comparison of the hotel's performance against its competitors, focusing on key metrics such as ratings, pricing strategies, and booking channels. 
+
+It reveals that the average competitor rating is 3.04, with an average daily rate of GHC2,615.56 across four competitors. 
+
+Monthly room rates show fluctuations, peaking in February at GHC490K and reaching a low in October at GHC397K. 
+
+Competitor bookings by channel highlight that direct bookings are predominant, with Blue Roof Hotel leading indirect (82), walk-in (106), and event bookings (91). 
+
+Analysis by pricing strategy indicates that competitors employ various strategies, with competitive pricing attracting the highest bookings (183), followed by premium and budget options. 
+
+Booking counts by room type show a preference for double rooms across all competitors, with Bahamas Luxury having the highest count (143) for double rooms. 
+
+These insights enable the hotel to strategize effectively, optimizing pricing and marketing efforts to stay competitive in the market.
+
+
