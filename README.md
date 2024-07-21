@@ -1,6 +1,6 @@
 # Predictive Hotel Booking Patterns
 
-![Alt text](assets/images/Freshcartcv.jpg)
+![Alt text](assets/images/Hotelcover.jpg)
 ## Introduction
 
 This Power BI project aims to analyze the hotel booking data for the fictional company “Hospitality Haven.” By deriving insights from the data, we aim to answer crucial questions and provide actionable recommendations to help the business make informed decisions.
