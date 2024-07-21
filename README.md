@@ -116,3 +116,4 @@ The data resides within a Microsoft Excel workbook. To import it into Power BI, 
    - Use Power Query to verify and shape the data structure.
 
 ## Data Model
+![Alt text](assets/images/Hotelstar.jpg)
