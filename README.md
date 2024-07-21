@@ -117,3 +117,99 @@ The data resides within a Microsoft Excel workbook. To import it into Power BI, 
 
 ## Data Model
 ![Alt text](assets/images/Hotelstar.jpg)
+---
+## Dax Formulas and Measures Created
+
+1. **Average Competitor Daily Rate**:
+   ```dax
+   Average Competitor Daily Rate = CALCULATE(AVERAGE(BookingTable[Competitor_Room_Rate]))
+   ```
+   This measure calculates the average daily room rate of competitors from the `BookingTable`.
+
+2. **Average Competitor Rating**:
+   ```dax
+   Average Competitor Rating = AVERAGE(Competitor_Table[Competitor_Rating])
+   ```
+   This measure calculates the average rating of competitors from the `Competitor_Table`.
+
+3. **Average Stay**:
+   ```dax
+   Average Stay = AVERAGE(BookingTable[Duration_of_Stay])
+   ```
+   This measure calculates the average duration of stay from the `BookingTable`.
+
+4. **AVG Daily Rate**:
+   ```dax
+   AVG Daily _Rate = AVERAGE(BookingTable[Room_Rate])
+   ```
+   This measure calculates the average daily room rate from the `BookingTable`.
+
+5. **Bookings Count**:
+   ```dax
+   Bookings Count = COUNTROWS(BookingTable)
+   ```
+   This measure counts the total number of bookings in the `BookingTable`.
+
+6. **Cancellation Rate**:
+   ```dax
+   Cancellation Rate = DIVIDE(
+       COUNTAX(FILTER(BookingTable, BookingTable[Cancellation] = "Yes"), BookingTable[Cancellation]),
+       COUNT(BookingTable[Booking_ID]), 
+       0
+   ) * 100
+   ```
+   This measure calculates the cancellation rate as a percentage. It counts the number of bookings where the cancellation status is "Yes" and divides it by the total number of bookings, then multiplies by 100 to get the percentage.
+
+7. **Total Competitor Rate**:
+   ```dax
+   Total Competitor Rate = SUM(Competitor_Table[Competitor_Room_Rate])
+   ```
+   This measure calculates the total room rates of all competitors from the `Competitor_Table`.
+
+8. **Total Competitors**:
+   ```dax
+   Total Competitors = DISTINCTCOUNT(Competitor_Table[Competitor_ID])
+   ```
+   This measure counts the total number of unique competitors in the `Competitor_Table`.
+
+9. **Total Guests**:
+   ```dax
+   Total Guests = CALCULATE(SUM(Customer_Table[Group_Size]), 'BookingTable'[Cancellation] = "No")
+   ```
+   This measure calculates the total number of guests from the `Customer_Table` for bookings that were not canceled.
+
+10. **Total Loss**:
+    ```dax
+    Total Loss = CALCULATE(
+        SUMX(
+            'BookingTable', 
+            ('BookingTable'[Room_Rate] * 'BookingTable'[Duration_of_Stay]) - BookingTable[Additional_Room_Cost]
+        ), 
+        BookingTable[Room_Rate] * BookingTable[Duration_of_Stay] < BookingTable[Additional_Room_Cost]
+    )
+    ```
+    This measure calculates the total loss by summing the difference between the room rate multiplied by the duration of stay and the additional room cost for each booking where the total room rate is less than the additional room cost.
+
+11. **Total Profit**:
+    ```dax
+    Total Profit = CALCULATE(
+        SUMX(
+            BookingTable, 
+            (BookingTable[Room_Rate] * BookingTable[Duration_of_Stay]) - 'BookingTable'[Additional_Room_Cost]
+        ), 
+        BookingTable[Cancellation] = "No"
+    )
+    ```
+    This measure calculates the total profit by summing the difference between the room rate multiplied by the duration of stay and the additional room cost for each booking that was not canceled.
+
+12. **Total Revenue**:
+    ```dax
+    Total Revenue = CALCULATE(
+        SUMX(
+            BookingTable, 
+            BookingTable[Competitor_Room_Rate] * BookingTable[Duration_of_Stay]
+        ), 
+        BookingTable[Cancellation] = "No"
+    )
+    ```
+    This measure calculates the total revenue by summing the competitor room rate multiplied by the duration of stay for each booking that was not cancelled.
